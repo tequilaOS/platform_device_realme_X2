@@ -1130,7 +1130,7 @@ vendor/radio/qcril_database/qcril.db
 
 # Radio - IMS
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
-system_ext/lib64/lib-imsvideocodec.so
+system_ext/lib64/lib-imsvideocodec.so|454aa09320c0c994916bcdf23e07c8ae08f87154
 system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
 system_ext/lib64/lib-imsvtutils.so
