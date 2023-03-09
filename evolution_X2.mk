@@ -9,27 +9,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+# Inherit some common Evolution X stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Inherit from X2 device
 $(call inherit-product, device/realme/X2/device.mk)
 
-# Inherit some Spark stuff.
+# Inherit some Evolution stuff.
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
-SPARK_BUILD_TYPE := UNOFFICIAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
-# Inherit some props from Spark
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-  ro.spark.maintainer= ☠️☠𝕽𝕵𝕯𝕬𝕽𝕶❸❾☠☠️🏴‍
-
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := spark_X2
+PRODUCT_NAME := evolution_X2
 PRODUCT_DEVICE := X2
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme X2
